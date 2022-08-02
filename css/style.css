@@ -1,0 +1,316 @@
+/*Reset ---------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /*Ver se fica legal*/
+    /*opacity: 0.9;*/
+}
+
+nav, ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+/*Parallax -------------------------------------*/
+
+.parallax {
+    background-size: cover !important;
+    background-attachment: fixed !important;
+    height: 700px;
+}
+
+/*Header ---------------------------------------*/
+header {
+    background: #FFF url(../img/bg-1.jpg) no-repeat center;
+}
+
+header nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header nav ul li {
+    padding: 5px;
+    
+    font-size: 14px;
+}
+
+header nav ul li a {
+    color: #FFF;
+    opacity: 0.8;
+}
+
+header nav ul li a:hover {
+    opacity: 1;
+}
+
+header .header-intro {
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    color: #FFF;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .header-intro h1 {
+    font-size: 2.9rem;
+}
+
+/*Divisor ---------------------*/
+
+section.divisor {
+    background-color: rgb(44, 44, 44);
+    color: #FFF;
+    height: 300px;
+    width: 100%;
+}
+
+section.divisor article.divisor-home {
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.divisor article.divisor-home h1 {
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+
+section.divisor article.divisor-home p {
+    width: 83%;
+    font-size: 1.1rem;
+    font-weight: 100;
+}
+
+/*Section 1 ----------------------------------*/
+section.section1 {
+    background: #FFF url(../img/bg-2.jpg) no-repeat center;
+}
+
+section.section1 .section1-intro {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+}
+
+section.section1 .section1-intro h1 {
+    font-size: 3rem;
+}
+
+/*Section 2 ----------------------------------*/
+section.section2 {
+    background: #FFF url(../img/bg-3.jpg) no-repeat center;
+}
+
+section.section2 .section2-intro {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+}
+
+section.section2 .section2-intro h1 {
+    font-size: 3rem;
+}
+
+/*Section 3 ----------------------------------*/
+section.section3 {
+    background: #FFF url(../img/bg-4.jpg) no-repeat center;
+}
+
+section.section3 .section3-intro {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+}
+
+section.section3 .section3-intro h1 {
+    font-size: 3rem;
+}
+
+/*Section 4 ----------------------------------*/
+section.section4 {
+    background: #FFF url(../img/bg-5.jpg) no-repeat center;
+}
+
+section.section4 .section4-intro {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+}
+
+section.section4 .section4-intro h1 {
+    font-size: 3rem;
+}
+
+/*Footer ---------------------------------------*/
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 10px;
+    background-color: rgb(44, 44, 44);
+    color: #FFF;
+}
+
+footer p a {
+    color: rgb(221, 94, 52);
+}
+
+/*Sociais ---------------------------------------*/
+
+.sociais {
+    font-size: 1.3rem;
+    width:13%;
+    height: 100%;
+}
+
+.sociais .sociais-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    bottom: 0px;
+    left: 5px;
+}
+
+.sociais .sociais-icons a {
+    color: #FFD700;
+    margin-bottom: 5px;
+}
+
+.sociais .sociais-icons a #spotify {
+    color: rgb(29, 209, 85);
+}
+
+.sociais .sociais-icons a #yt {
+    color: rgb(255, 0, 4);
+}
+
+.sociais .sociais-icons a #insta {
+    color: rgb(178, 0, 141);
+    width: 21px;
+}
+
+.sociais .sociais-icons a #fb {
+    color: rgb(56, 89, 164);
+}
+
+.sociais .sociais-icons a #tt {
+    color: rgb(36, 154, 212);
+}
+
+.sociais .sociais-icons hr {
+    border: 1px solid rgb(44, 44, 44);
+    width: 2px;
+    height: 40px;
+}
+
+/*Breakpoints & Media Querys*/
+@media (min-width: 700px) {
+    
+    .parallax {
+        height: 870px;
+    }
+
+    header nav ul {
+        justify-content: center;
+    }
+    
+    header nav ul li {
+        padding: 20px;
+        margin: 0 30px;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    header .header-intro h1 {
+        font-size: 4.5rem;
+    }
+
+    section.section1 .section1-intro h1,
+    section.section2 .section2-intro h1,
+    section.section3 .section3-intro h1,
+    section.section4 .section4-intro h1 {
+        font-size: 3.5rem;
+    }
+
+    section.divisor article.divisor-home h1 {
+        font-size: 2.5rem;
+        font-weight: 100;
+        margin-bottom: 10px;
+    }
+
+    section.divisor article.divisor-home p {
+        width: 70%;
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+
+    footer {
+        font-size: 1rem;
+    }
+
+    .sociais {
+        font-size: 2.5rem;
+    }
+
+    .sociais .sociais-icons {
+        position: fixed;
+        bottom: 5px;
+        left: 20px;
+    }
+
+    .sociais .sociais-icons a #insta {
+        width: 38px;
+    }
+}
